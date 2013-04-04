@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Properties Search Widget Demo</title>
+  <link rel="stylesheet" href="stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="stylesheets/custom.css">
+ 
+  <!-- libs -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="javascripts/libs/underscore.js"></script>
+	<script src="javascripts/libs/backbone.js"></script>
+	<!-- /libs -->
+
+	<!-- widget -->
+	<script src="javascripts/widget/app.js"></script>
+	<script src="javascripts/widget/mocks/tables.js"></script>
+	<script src="javascripts/widget/views/tables.js"></script>
+	<script src="javascripts/widget/models/table.js"></script>
+	<script src="javascripts/widget/collections/tables.js"></script>
+	<script src="javascripts/widget/views/table.js"></script>
+	<script src="javascripts/widget/views/tables.js"></script>
+	<!-- /widget -->
+</head>
+	<body>
+		<div id="application" class="container"></div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				window.app.start($("#application"));
+			});
+		</script>
+		<script type="text/html" id="application_tempalte">
+			<h1>Tables</h1>
+			<div id="table_container">
+			</div>
+		</script>
+		<script type="text/html" id="table_tempalte">
+			<button class="btn btn-larges <%= statusSelector %>" type="button"><%= name %></button>
+		</script>
+	</body>
+</html>

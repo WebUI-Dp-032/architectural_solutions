@@ -1,0 +1,17 @@
+.container h1 {
+	padding-left: 40px;
+}
+
+#table_container {
+	width: 200px;
+}
+
+.table {
+	display: inline-block;
+	width: 73px;
+	margin: 10px; 
+}
+
+.table .selected {
+	box-shadow: 0px 0px 15px blue;
+}
